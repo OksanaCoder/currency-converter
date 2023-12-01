@@ -1,0 +1,22 @@
+.inputNoBorder {
+    border: none;
+}
+.inputNoBorder:hover {
+    
+    background-image: url('../../assets/pencil.png');
+      background-size: 15px 15px; 
+      background-repeat: no-repeat;
+      cursor: pointer;
+    background-position: center;
+}
+.inputNoBorder:focus {
+    background-image: none;
+} 
+
+td {
+padding: 20px;
+}
+.container {
+    padding: 30px;
+
+}
