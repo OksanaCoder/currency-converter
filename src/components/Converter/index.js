@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
 import { HiArrowsRightLeft } from "react-icons/hi2";
-
-import styles from "./style.css";
+import "./style.css";
 
 const Converter = ({ data }) => {
   const [amount, setAmount] = useState(1);

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import Table from "react-bootstrap/Table";
-import { BsPencil, BsCheck, BsX } from "react-icons/bs"; // Import icons as needed
-
-import styles from "./style.css";
+import { BsCheck, BsX } from "react-icons/bs";
+import "./style.css";
 
 const TableMain = ({ data }) => {
   const [editableData, setEditableData] = useState(data);
 
-  const [originalData, setOriginalData] = useState(data); // Added originalData state
+  const [originalData, setOriginalData] = useState(data);
 
   const handleChange = (e, index, key) => {
     const updatedData = [...editableData];
@@ -41,6 +40,7 @@ const TableMain = ({ data }) => {
 
       setEditingCell(null);
     } else {
+      setOriginalData(data);
       alert(
         "Invalid input. Value must be within ±10% of the initial currency value."
       );
